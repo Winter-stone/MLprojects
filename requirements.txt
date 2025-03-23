@@ -1,0 +1,9 @@
+pandas
+numpy
+seaborn
+tensorflow
+scikit_learn
+pickle
+PIL
+requests
+-e .
