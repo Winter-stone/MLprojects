@@ -7,7 +7,7 @@ import numpy as np
 import tensorflow as tf
 import matplotlib.pyplot as plt
 
-loaded_model = pkl.load(open('../model_cats_dogs.pkl', 'rb'))
+loaded_model = pkl.load(open('model_cats_dogs.pkl', 'rb'))
 labels = loaded_model['class_name']
 loaded_model = loaded_model['model']
 
@@ -50,7 +50,7 @@ if img_url:
 
 else:
     try:
-        image = tf.keras.preprocessing.image.load_img('../cats_vs_dogs/dogs/4.jpg')
+        image = tf.keras.preprocessing.image.load_img('cats_vs_dogs/dogs/4.jpg')
 
     except FileNotFoundError as e:
         print('File Not Found at', e)
